@@ -29,9 +29,19 @@
     left: 80px;
 }
 
-/*
+.ingredients {
+    width: 270px;
+    z-index: -9;
+}
+
+.one {
+    left: -25px;
+    top: 600px;
+    transform: rotate(58deg);
+}
+
 .operation-cards {
-    padding: 10rem;
+    padding: 17rem 15rem;
     display: flex;
     justify-content: space-between;
 }
@@ -59,4 +69,3 @@
     text-align: center;
     color: var(--dark-grey);
 }
-*/

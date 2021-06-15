@@ -42,4 +42,4 @@ Clique aqui para abrir o layout do projeto no [Figma](https://www.figma.com/file
 
 ## :memo: Licença
 
-Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE.md) para mais detalhes.
+Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
