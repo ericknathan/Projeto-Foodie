@@ -1,0 +1,62 @@
+.landing-page {
+    padding: 0 12vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.landing-page .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.landing-page .content h1 {
+    font-size: 48px;
+    line-height: 56px;
+}
+
+.landing-page .content p {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    width: 90%;
+}
+
+.landing-page img {
+    width: 580px;
+    position: relative;
+    left: 80px;
+}
+
+/*
+.operation-cards {
+    padding: 10rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.operation-cards .card {
+    width: 280px;
+    height: 135px;
+    box-shadow: var(--box-shadow, 0 0 #0000);
+    border-radius: 0px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.operation-cards .card p {
+    font-weight: 600;
+    font-size: 14px;
+    text-align: center;
+    color: var(--black);
+}
+
+.operation-cards .card span {
+    font-size: 12px;
+    text-align: center;
+    color: var(--dark-grey);
+}
+*/
