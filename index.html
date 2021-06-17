@@ -6,10 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Foodie | Homepage</title>
     
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://kit.fontawesome.com/7cbb7ae6e7.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
-    
+
     <link rel="stylesheet" href="public/styles/reset.css">
     <link rel="stylesheet" href="public/styles/header.css">
     <link rel="stylesheet" href="public/styles/home.css">
@@ -39,7 +40,7 @@
                 <p>Healthly switcher chefs do all the prep work, like peeding, copping & marinating, so you can cook a fresh food. </p>
                 <a href="#"><button>Order Now <i class="fas fa-arrow-right"></i></button></a>
             </div>
-            <img src="public/images/Salad-1.png" alt="Salada">
+            <img class="plate" src="public/images/Salad-1.png" alt="Salada" data-tilt >
         </div>
         <img class="ingredients one" src="public/images/background/Ingredients.png" alt="Ingredientes">
         <div class="operation-cards">
@@ -59,6 +60,34 @@
                 <span>Call Online</span>
             </div>
         </div>
+        <div class="about" id="about">
+            <img class="plate" src="public/images/Salad-2.png" alt="Salada" data-tilt >
+            <div class="content">
+                <div class="titles">
+                    <small>About</small>
+                    <h2>Food is An Important Part Of A Balanced Diet</h2>
+                </div>
+                <div class="texts">
+                    <p>
+                        They actually assured me over and over that take little time off and come back and work. Fast forward tow
+                        weeks after <br> we are going for a new project.
+                        <br><br>
+                        I wrote to let them know ready to come back they kicked <br> me of their team slack all of us are make
+                        company email.
+                    </p>
+                    <div class="buttons">
+                        <a href="#"><button>Learn More</button></a>
+                        <a href="#">
+                            <img src="public/images/icons/Play.svg" alt="Play Button">
+                            <p>Watch Vídeo</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <img class="bg" src="public/images/background/vector-2.svg" alt="">
+        </div>
     </main>
+
+    <script src="public/scripts/tilt.jquery.min.js"></script>
 </body>
 </html>

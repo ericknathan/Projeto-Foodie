@@ -15,6 +15,11 @@ header button {
     text-align: center;
     font-weight: 600;
     cursor: pointer;
+    transition: ease .5s;
+}
+
+header button:hover {
+    background-color: #f0f0f0;
 }
 
 header nav {
@@ -22,6 +27,7 @@ header nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index: 10;
 }
 
 header nav ul {
@@ -56,8 +62,30 @@ header nav a.active::after {
     content: "";
 }
 
+header nav li a:not(.active):hover {
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+header nav li a:not(.active)::after {
+    opacity: 0;
+    width: 10px;
+    height: 10px;
+    border-radius: 50px;
+    background-color: var(--white);
+    content: "";
+    transition: ease-out .5s;
+}
+
+header nav li a:not(.active):hover::after {
+    opacity: 1;
+}
+
 header .bg {
-height: 107vh;
-right: 0px;
-top: 0px;
+    height: 107vh;
+    right: 0px;
+    top: 0px;
 }

@@ -40,6 +40,10 @@ button {
     cursor: pointer;
 }
 
+button:hover {
+    transform: scale(105%);
+}
+
 .hidden {
     display: none;
 }
@@ -47,4 +51,8 @@ button {
 .bg, .ingredients {
     position: absolute;
     z-index: -10;
+}
+
+.plate {
+    z-index: 5;
 }

@@ -23,10 +23,26 @@
     width: 90%;
 }
 
-.landing-page img {
+.landing-page .plate {
     width: 580px;
     position: relative;
     left: 80px;
+}
+
+.landing-page::after {
+    content: "";
+    width: 550px;
+    height: 550px;
+    right: 7.5vw;
+    top: 15vh;
+    border: 2px solid #fff;
+    border-radius: 100%;
+    position: absolute;
+    z-index: -8;
+}
+
+.landing-page button {
+    transition: ease .5s;
 }
 
 .ingredients {
@@ -44,6 +60,7 @@
     padding: 17rem 15rem;
     display: flex;
     justify-content: space-between;
+    padding-bottom: 5rem;
 }
 
 .operation-cards .card {
@@ -55,6 +72,11 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    transition: ease .5s;
+}
+
+.operation-cards .card:hover {
+    transform: scale(110%);
 }
 
 .operation-cards .card p {
@@ -68,4 +90,82 @@
     font-size: 12px;
     text-align: center;
     color: var(--dark-grey);
+}
+
+.about {
+    padding: 0 2rem;
+    display: flex;
+    align-items: center;
+}
+
+.about .plate {
+    width: 750px;
+    height: auto;
+}
+
+.about .content {
+    padding-right: 10rem;
+    height: 58vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 10;
+}
+
+.about .content .texts {
+    width: 80%;
+    height: 38vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.about .bg {
+    height: 115vh;
+    left: 0px;
+    top: 1183px;
+}
+
+small {
+    color: var(--yellow);
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+h2 {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 48px;
+}
+
+.content p {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 23px;
+}
+
+.buttons, .buttons a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.buttons {
+    width: 100%
+}
+
+.buttons p {
+    font-weight: normal;
+}
+
+.buttons a:last-child {
+    width: 10rem;
+}
+.buttons button {
+    transition: ease .5s;
+}
+
+a {
+    text-decoration: none;
 }
