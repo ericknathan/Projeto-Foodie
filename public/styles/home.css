@@ -16,10 +16,7 @@
     line-height: 56px;
 }
 
-.landing-page .content p {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 21px;
+.landing-page .texts p {
     width: 90%;
 }
 
@@ -66,17 +63,6 @@
 .operation-cards .card {
     width: 280px;
     height: 135px;
-    box-shadow: var(--box-shadow, 0 0 #0000);
-    border-radius: 0px 30px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    transition: ease .5s;
-}
-
-.operation-cards .card:hover {
-    transform: scale(110%);
 }
 
 .operation-cards .card p {
@@ -86,16 +72,11 @@
     color: var(--black);
 }
 
-.operation-cards .card span {
-    font-size: 12px;
-    text-align: center;
-    color: var(--dark-grey);
-}
-
 .about {
     padding: 0 2rem;
     display: flex;
     align-items: center;
+    padding-bottom: 10rem;
 }
 
 .about .plate {
@@ -126,25 +107,6 @@
     top: 1183px;
 }
 
-small {
-    color: var(--yellow);
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 21px;
-}
-
-h2 {
-    font-weight: 600;
-    font-size: 32px;
-    line-height: 48px;
-}
-
-.content p {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 23px;
-}
-
 .buttons, .buttons a {
     display: flex;
     align-items: center;
@@ -162,10 +124,46 @@ h2 {
 .buttons a:last-child {
     width: 10rem;
 }
-.buttons button {
-    transition: ease .5s;
+
+.two {
+    top: 1920px;
+    right: -17px;
+    transform: rotate(-64deg);
 }
 
-a {
-    text-decoration: none;
+.work {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 10;
+    position: relative;
+    text-align: center;
+    height: 93vh;
+    justify-content: space-between;
+    padding: 7rem 20rem;
+}
+
+.work .texts {
+    width: 31vw;
+}
+
+.work-cards {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.work-cards .card {
+    width: 245px;
+    height: 18rem;
+    padding: 32px 20px 65px;
+    justify-content: space-between;
+}
+
+.work-cards .card h3 {
+    padding-top: -1rem;
+}
+
+.card .header img {
+    height: 3rem;
 }

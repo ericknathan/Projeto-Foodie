@@ -15,7 +15,6 @@ header button {
     text-align: center;
     font-weight: 600;
     cursor: pointer;
-    transition: ease .5s;
 }
 
 header button:hover {
