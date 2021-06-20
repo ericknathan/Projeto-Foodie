@@ -167,3 +167,127 @@
 .card .header img {
     height: 3rem;
 }
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 10vh;
+}
+
+.menu > p {
+    width: min(480px, 55vw);
+    text-align: center;
+}
+
+.menu .product-cards {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 7vh 0;
+}
+
+.menu .card {
+    /*width: 24vw;*/
+    margin: 15px;
+    box-sizing: border-box;
+    float: left;
+}
+
+.menu .card img {
+    width: 100%;
+}
+
+.menu .card .content {
+    width: 81%;
+    padding: 23px 0 15px 0;
+    justify-content: space-between;
+}
+
+.menu .card .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu .card h3 {
+    font-weight: 500;
+    font-size: 2vw;
+}
+
+.menu .card span {
+    color: var(--dark-grey);
+    font-size: 10px;
+    position: relative;
+    top: -5px;
+    display: block;
+    line-height: 1.6;
+    text-align: inherit;
+}
+
+.menu .card p {
+    color: var(--black);
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.menu .card .info {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.menu .card .info .stars {
+    display: flex;
+    padding: 0 9.5%;
+}
+
+.menu .card .info .stars .star {
+    margin: 0px 3px;
+    color: var(--grey);
+}
+
+.menu .card .info .stars .star.active {
+    color: var(--yellow);
+}
+
+.menu .card .info .add-button  {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.menu .card .info .add-button a {
+    background-color: var(--yellow);
+    width: 8vw;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    color: var(--white);
+    font-size: 50px;
+    font-weight: 500;
+    border-radius: 40px 0px 5px;
+}
+
+@media(min-width: 1024px){
+    .menu .card{
+        width: 24vw;
+    }
+}
+
+@media(max-width: 1024px){
+    .menu .card{
+        width: 36vw;
+    }
+
+    .menu .card h3 {
+        font-size: 3vw;
+    }
+}
+@media(max-width: 750px){
+    .menu .card{
+        width: 48vw;
+    }
+}

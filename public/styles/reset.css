@@ -79,10 +79,6 @@ h2 {
     line-height: 23px;
 }
 
-.hidden {
-    display: none;
-}
-
 .bg, .ingredients {
     position: absolute;
     z-index: -10;

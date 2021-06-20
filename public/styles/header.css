@@ -88,3 +88,17 @@ header .bg {
     right: 0px;
     top: 0px;
 }
+
+.hidden {
+    display: none;
+}
+
+@media(max-width: 1280px){
+    .hidden {
+        display: flex;
+    }
+
+    header nav {
+        display: none;
+    }
+}
