@@ -108,3 +108,17 @@ h2 {
     text-align: center;
     color: var(--dark-grey);
 }
+
+.stars {
+    display: flex;
+    padding: 0 9.5%;
+}
+
+.stars .star {
+    margin: 0px 3px;
+    color: var(--grey);
+}
+
+.stars .star.active {
+    color: var(--yellow);
+}
