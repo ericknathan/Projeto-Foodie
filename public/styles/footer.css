@@ -1,0 +1,91 @@
+footer {
+    padding: 0 10vw;
+    padding-top: 10vh;
+    height: 50vh;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-auto-rows: minmax(100px, 1fr);
+    grid-template-areas:
+        "logo nav nav nav nav"
+        "social social info info info"
+        "copy copy copy copy copy";
+}
+
+footer > img {
+    grid-area: logo;
+}
+
+footer .nav-buttons {
+    grid-area: nav;
+    padding: 0 12vw;
+    display: flex;
+    justify-content: space-around;
+}
+
+footer .nav-buttons a {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    color: var(--black);
+}
+
+footer .social-icons {
+    grid-area: social;
+}
+
+footer .social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+footer .social-icons i {
+    font-size: 21px;
+    color: var(--dark-grey);
+}
+
+footer .social-icons i.active {
+    color: var(--yellow);
+}
+
+footer .info {
+    grid-area: info;
+    display: flex;
+    justify-content: space-around;
+}
+
+footer .info .column {
+    display: flex;
+    flex-direction: column;
+}
+
+footer .info .column a {
+    font-size: 14px;
+    line-height: 21px;
+    color: var(--grey);
+}
+
+footer .copyright {
+    grid-area: copy;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .copyright span {
+    font-size: 14px;
+    line-height: 16px;
+}
+
+footer .copyright .author {
+    color: var(--yellow);
+}
+
+footer .copyright .author::before {
+    content: ". ";
+    color: transparent;
+}
+
+footer .bg {
+    right: 0;
+    margin-top: -19vh;
+}

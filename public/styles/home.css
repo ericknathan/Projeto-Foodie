@@ -337,7 +337,9 @@
     position: absolute;
     right: .8rem;
     top: .8rem;
-    height: 70%;
+    height: 75px;
+    font-weight: normal;
+    font-size: 20px;
 }
 
 @media(min-width: 1024px){
