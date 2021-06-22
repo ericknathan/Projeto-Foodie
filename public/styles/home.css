@@ -1,7 +1,15 @@
 .landing-page {
     padding: 0 12vw;
     display: flex;
+    flex-direction: row-reverse;
+    /*
     justify-content: space-between;
+    */
+    -moz-box-align: center;
+    align-items: center;
+    -moz-box-orient: horizontal;
+    -moz-box-direction: normal;
+    flex-direction: row;
 }
 
 .landing-page .content {
@@ -24,18 +32,8 @@
     width: 580px;
     position: relative;
     left: 80px;
-}
-
-.landing-page::after {
-    content: "";
-    width: 550px;
-    height: 550px;
-    right: 7.5vw;
-    top: 15vh;
-    border: 2px solid #fff;
-    border-radius: 100%;
-    position: absolute;
-    z-index: -8;
+    max-width: 90vw;
+    margin-left: -5vw;
 }
 
 .landing-page button {
@@ -85,7 +83,7 @@
 }
 
 .about .plate {
-    width: 750px;
+    width: 100%;
     height: auto;
 }
 
@@ -143,9 +141,8 @@
     z-index: 10;
     position: relative;
     text-align: center;
-    height: 93vh;
     justify-content: space-between;
-    padding: 7rem 20rem;
+    padding-bottom: 5vh;
 }
 
 .work .texts {
@@ -153,9 +150,17 @@
 }
 
 .work-cards {
+/*
     display: flex;
     width: 100%;
     justify-content: space-between;
+*/
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 7vh 0;
 }
 
 .work-cards .card {
@@ -163,6 +168,9 @@
     height: 18rem;
     padding: 32px 20px 65px;
     justify-content: space-between;
+    margin: 15px;
+    box-sizing: border-box;
+    float: left;
 }
 
 .work-cards .card h3 {
@@ -354,6 +362,54 @@
 }
 
 @media(max-width: 1024px){
+
+    .one {
+        display: none;
+    }
+
+    header .bg {
+        height: 80vh;
+    }
+
+    .landing-page {
+        -moz-box-align: unset;
+        align-items: unset;
+        -moz-box-orient: vertical;
+        -moz-box-direction: reverse;
+        flex-direction: column-reverse;
+    }
+    
+    .landing-page .plate {
+        left: 0px;
+    }
+
+    .landing-page .content {
+        align-items: center;
+        text-align: center;
+    }
+
+    .about {
+        flex-direction: column;
+    }
+
+    .about .content {
+        padding: 0 5rem;
+        text-align: center;
+        align-items: center;
+    }
+
+    .about .content .texts {
+        width: 100%;
+    }
+
+    .about .content .buttons {
+        gap: 30px;
+    }
+
+    .work .texts {
+        width: 60vw;
+    }
+    
     .menu .card{
         width: 36vw;
     }

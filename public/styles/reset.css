@@ -88,7 +88,6 @@ h2 {
     z-index: 5;
 }
 
-
 .card {
     box-shadow: var(--box-shadow, 0 0 #0000);
     border-radius: 0px 30px;
@@ -97,6 +96,7 @@ h2 {
     align-items: center;
     justify-content: center;
     transition: ease .5s;
+    background-color: white;
 }
 
 .card:hover {
