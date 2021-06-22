@@ -271,7 +271,14 @@
 
 .testimonial {
     text-align: center;
-    padding: 15vh 31vw;
+    padding: 15vh 0;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.testimonial > p {
+    width: min(500px, 85vw);
 }
 
 .testimonial .feedback-cards {
@@ -281,7 +288,7 @@
 .testimonial .feedback-cards .card {
     padding: 21px 46px;
     height: 300px;
-    width: 570px;
+    width: min(570px, 90vw);
 }
 
 .testimonial .feedback-cards .card img {
@@ -289,6 +296,7 @@
     border-radius: 50%;
     height: 100px;
     width: 100px;
+    margin-top: 20px;
 }
 
 .testimonial .feedback-cards .card p {
@@ -329,7 +337,7 @@
 
 .contact {
     position: relative;
-	width: 790px;
+	width: min(85vw,790px);
     display: flex;
     align-items: center;
 }
@@ -341,7 +349,7 @@
     height: 100px;
     border-radius: 500px;
     border: none;
-    font-size: 20px;
+    font-size: 1rem;
     padding: 1rem;
     box-shadow: var(--box-shadow, 0 0 #0000);
 }
@@ -418,8 +426,15 @@
         font-size: 3vw;
     }
 }
+
 @media(max-width: 750px){
     .menu .card{
         width: 48vw;
+    }
+}
+
+@media (max-width: 450px) {
+    .menu .card {
+        width: 70vw;
     }
 }
