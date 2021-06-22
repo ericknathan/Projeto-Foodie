@@ -35,6 +35,7 @@ ericknathan.github.io/projeto-foodie/ ) hospedado no GitHub Pages.
 
 -  [HTML](https://developer.mozilla.org/pt-BR/docs/Web/HTML/)
 -  [CSS](https://developer.mozilla.org/pt-BR/docs/Web/CSS/)
+-  [Tilt.js](https://gijsroge.github.io/tilt.js/)
 
 ## :paintbrush: Layout
 
