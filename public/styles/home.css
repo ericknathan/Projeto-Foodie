@@ -83,8 +83,9 @@
 }
 
 .about .plate {
-    width: 100%;
+    width: 580px;
     height: auto;
+    max-width: 90vw;
 }
 
 .about .content {
